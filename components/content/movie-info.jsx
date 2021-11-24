@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 const MovieInfo = ({
   data = {
-    ratings: []
+    Ratings: []
   }
 }) => {
+  const ratings = data.Ratings ?? []
   return (
     <>
       <div className="grid grid-cols-9 gap-4 my-12 mobile:text-center">
@@ -15,7 +16,7 @@ const MovieInfo = ({
         <span className="text-sm border rounded-sm p-1 w-fit-content">{data.Rated}</span>
         <div className="opacity-50 mt-3 mb-6">{data.Year} - {data.Genre} - {data.Runtime}</div>
         <div className="flex">
-          {data.Ratings.map((rating, i) => {
+          {ratings.map((rating, i) => {
             return (
               <div key={i} className={i > 0 ? 'mx-6' : 'mr-6'}>
                 <div className="text-xl">{rating.Value}</div>
