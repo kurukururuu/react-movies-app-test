@@ -1,7 +1,7 @@
 // import styles from '../styles/Home.module.css'
 /* eslint-disable @next/next/no-img-element */
 
-import FilmCard from "../components/content/movie-card";
+import MovieCard from "../components/content/movie-card";
 import LayoutFullHeight from "../components/layout/fullHeight";
 import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
@@ -141,7 +141,7 @@ export default function Home(ctx) {
         <div className="grid grid-cols-4 gap-4 mobile:grid-cols-2">
           {movieList.data.map((movie, i) => {
             return (
-              <FilmCard key={i} data={movie} onImgClick={openImage} className="col-span-1" />
+              <MovieCard key={i} data={movie} onImgClick={openImage} className="col-span-1" />
             )
           })}
         </div>
