@@ -7,7 +7,7 @@ const MovieCard = ({
   onImgClick = () => {}
 }) => {
   return (
-    <div className="border border-white rounded-lg p-4">
+    <div className="border border-white rounded-lg p-4 movie-card">
       <div className="flex flex-col items-center text-center">
         <img src={data.Poster}
           onError={e => e.target.src='https://via.placeholder.com/125x150'}

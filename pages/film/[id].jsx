@@ -52,7 +52,10 @@ export default function FilmDetail(ctx) {
           </div> : 
 
           <>
-            <div className="bg-gray-500 rounded-full w-12 h-12 text-xl flex items-center justify-center font-semibold cursor-pointer transform hover:scale-110" onClick={() => router.push('/')}>
+            <div
+              id="back-button"
+              className="bg-gray-500 rounded-full w-12 h-12 text-xl flex items-center justify-center font-semibold cursor-pointer transform hover:scale-110"
+              onClick={() => router.push('/')}>
               &lt;
             </div>
 

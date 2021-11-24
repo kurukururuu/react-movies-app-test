@@ -12,7 +12,7 @@ const MovieInfo = ({
         <img src={data.Poster} alt="poster" className="rounded-lg" />
       </div>
       <div className="col-span-8 p-4 mobile:col-span-9">
-        <div className="text-3xl mb-2">{data.Title}</div>
+        <div className="text-3xl mb-2 movie-title">{data.Title}</div>
         <span className="text-sm border rounded-sm p-1 w-fit-content">{data.Rated}</span>
         <div className="opacity-50 mt-3 mb-6">{data.Year} - {data.Genre} - {data.Runtime}</div>
         <div className="flex">

@@ -124,9 +124,9 @@ export default function Home(ctx) {
   return (
     <LayoutFullHeight>
       <div className="container mx-auto py-8">
-        <div className="text-3xl mb-12">Movies</div>
+        <div className="text-3xl mb-12 title">Movies</div>
 
-        <form onSubmit={e => handleSearch(e)}>
+        <form onSubmit={e => handleSearch(e)} id="search-bar">
           <label htmlFor="keyword" className="flex items-center mb-8">
             <div className="font-semibold mr-2">Search:</div>
             <input id="keyword" name="keyword" value={keyword} onChange={e => {handleKeywordChange(e)}}
